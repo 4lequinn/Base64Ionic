@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Cheers ;)
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,24 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Cheers ;)</ion-title>
     </ion-toolbar>
   </ion-header>
-
   <div id="container">
     <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+    <div>
+      <input type="file" (change)="capturarFile($event)">
+    </div>
+    <!-- PREVIEW IMAGE -->
+    <div *ngIf="previsualizacion">
+      <img [src]="previsualizacion" width="100px" height="100px" alt="">
+    </div>
+    <div>
+      <button type="button" [disabled]="loading"  (click)="subirArchivo()">
+        {{ (loading) ? 'Cargando ...'  : 'Subir Archivo'}}
+      </button>
+    </div>
+    <p><span style="color:red;">中国のサルとのハッキング</span> <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
 </ion-content>
