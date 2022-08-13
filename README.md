@@ -11,21 +11,47 @@
 tiene como objetivo realizar una intregación con un backend programado en python con Django Rest Framework 
 para la subida de archivos binarios en un servidor.
 
-## Instalación
+## Instalación para crear APP
 
 <hr>
 
-> Npm
+> Npm : Instalaciones globales.
 
 ```
 nvm install 16.13.2 --lts
 nvm use 16.13.2
 npm install -g @angular/cli
 npm install -g ionic
-npm install -g cordova
+npm install -g @capacitor/core
 ```
 
-Más información Próximamente.
+## Creación de proyecto
+
+```
+ionic start --blank --capacitor
+```
+
+## Instalación de dependencias
+
+> Npm : Instalaciones locales
+
+```
+npm install
+```
+
+
+## Levantar el servidor
+
+> Levantar servidor en el navegador web 
+```
+ionic serve
+```
+
+> Levantar servidor en la web con diseño personalizado ANDROID/IOS
+```
+ionic lab
+```
+
 
 <hr>
 
@@ -38,6 +64,7 @@ Más información Próximamente.
 * Ionic Framework 5.4.16
 * Node 16.13.2
 * Npm 8.1.2
+* Capacitor
 
 ## Herramientas
 * Visual Studio Code 
@@ -46,11 +73,11 @@ Más información Próximamente.
 
 ## Características
 
+> En proceso
+
 * Decoder Base 64 File
 * Consumer API REST
 * Events
-
-## Créditos
 
 > ## Shinigami ♡.
 
